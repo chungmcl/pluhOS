@@ -1,0 +1,4 @@
+otool -l build/pluhOS
+otool -h build/pluhOS
+
+llvm-objdump -D build/pluhOS
