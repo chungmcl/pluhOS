@@ -1,1 +1,1 @@
-qemu-system-aarch64 -machine virt -cpu max -m 1G -kernel build/pluhOS.bin -S -s
+qemu-system-aarch64 -machine virt -cpu max -m 1G -kernel build/pluhOS.bin -S -s -nographic
