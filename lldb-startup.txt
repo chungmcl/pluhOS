@@ -1,2 +1,6 @@
-target create build/pluhOS
-gdb-remote localhost:1234
+settings set target.exec-search-paths ./build
+target create ./build/pluhOS
+add-dsym ./build/pluhOS.dSYM
+target symbols add ./build/pluhOS.dSYM
+breakpoint set --name main
+gdb-remote localhost:4321
