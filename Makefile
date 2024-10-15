@@ -9,7 +9,7 @@ all:
 # https://lld.llvm.org/ELF/linker_script.html
 # -T <script>             Specify <script> as linker script
 # -z <arg>                Pass -z <arg> to the linker
-	clang -g -o $(BUILD_DIR)/$(NAME) $(SRC_DIR)/start.asm $(SRC_DIR)/main.c -nostdlib -static -fuse-ld=lld -v
+	clang -g -o $(BUILD_DIR)/$(NAME) $(SRC_DIR)/start.asm $(SRC_DIR)/main.c -T $(SRC_DIR)/link.ld -nostdlib -static -v
 	
 # for some reason --only-section doesn't work but --dump-section does...? 
 # but I still have to specify an output file even with --dump-section, so using a throwaway file named "_"
