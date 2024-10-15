@@ -1,12 +1,12 @@
 .text
-.global start
+.global _start
 
-start:
+_start:
   // Set the stack pointer to a specific memory address
   LDR X0, =0x40010000
-  MOV SP, X0   // Replace with your desired stack address
+  MOV SP, X0
 
-  // Your code goes here
-  BL _main
+  // Jump to main.c
+  BL main
 
 .end
