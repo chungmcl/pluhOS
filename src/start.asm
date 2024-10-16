@@ -8,9 +8,9 @@ _start:
   ldr x1, =0x40081000
   mov sp, x1
 
-  // Device tree address is currently stored in x0. Move it to x3
+  // Device tree address is currently stored in x0. Move it to x1
   // so we can grab it later, since x0 will be overwritten.
-  mov x3, x0
+  mov x1, x0
 
   // Jump to main.c:main
   bl main
