@@ -16,3 +16,7 @@ all:
 	llvm-objcopy --dump-section ".text=$(BUILD_DIR)/$(NAME).bin" $(BUILD_DIR)/$(NAME) $(BUILD_DIR)/_
 
 	rm $(BUILD_DIR)/_
+
+clean:
+	rm -rf $(BUILD_DIR)
+	mkdir -p $(BUILD_DIR)
