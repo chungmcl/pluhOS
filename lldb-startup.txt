@@ -1,7 +1,6 @@
 settings set target.exec-search-paths ./build
 target create ./build/pluhOS
-# add-dsym ./build/pluhOS.dSYM
-target symbols add ./build/pluhOS.dSYM
+target symbols add ./build/pluhOS
 
 breakpoint set --name main
 

@@ -1,6 +1,9 @@
+Various useful commands:
+
 readelf -S build/pluhOS
 
 llvm-objdump -D build/pluhOS
 
-# Built ld.lld at /Users/chungmcl/Projects/llvm-project/build/bin/
+# I built ld.lld at /Users/chungmcl/Projects/llvm-project/build/bin/ and am using that,
+# but you could also just do `brew install lld` and symlink to that instead
 ln -s /Users/chungmcl/Projects/llvm-project/build/bin/ld.lld /usr/local/bin/ld
